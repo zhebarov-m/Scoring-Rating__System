@@ -7,6 +7,9 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/nullStyle.css">
+	<link rel="stylesheet" href="./css/table2.css">
+	<link rel="stylesheet" href="./css/table.css">
+	<link rel="stylesheet" href="./css/styleDataS2.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -15,19 +18,19 @@
 			<header class="header">
 				<div class="header__logo">
 					<img width="50px" src="./img/Mpgu_logo.png" alt="" class="logo">
-					<div class="logo__text">ГБПОУ ВО "ГГКИТ" <br> <span>Web-программирование</span></div>
+					<div class="logo__text">ГБПОУ ВО "ГГКИТ" <br></div>
 				</div>
 			</header>
-			<div class="srs__system">
+			<div onclick="openSRS()" class="srs__system">
 				<img width="24px" src="./img/hat_graduation_regular_icon_203547.svg" alt="" class="srs__logo">
 				<p class="srs__title">БРС</p>
 			</div>
 			<div class="timetable">
 				<img width="24px" src="./img/timetableSVG.svg" alt="">
-				<p>Расписание</p>
+				<p class="srs__title">Расписание</p>
 			</div>
 		</div>
-		<main class="content">
+		<main style="display: none;" class="content">
 			<div class="nav__panel">
 				<div class="home__panel">
 					<img src="./img/home-button_icon-icons.com_72700.svg" alt="">
@@ -37,7 +40,7 @@
 					<p>БРС</p>
 				</div>
 			</div>
-			<div class="groups">
+			<div class="groups" style="height: 60px;">
 				<p class="groups__text">
 					<img src="./img/seo-social-web-network-internet_66_icon-icons.com_61546.svg" alt="">
 					<span>Выбор группы</span>
@@ -47,33 +50,166 @@
 					<div class="course2__btns">
 						<div class="buttons">
 							<div class="container">
-								<a href="https://twitter.com/masuwa1018" class="btn effect01" target="_blank"><span>И1.21-21</span></a>
+								<a onclick="populateTable()" href="#" class="btn effect01"><span>И1.21-21</span></a>
 							</div>
 						</div>
 						<div class="buttons2">
 							<div class="container2">
-								<a href="https://twitter.com/masuwa1018" class="btn2 effect02" target="_blank"><span>И1.21-22</span></a>
+								<a onclick="populateTable2()" href="#" class="btn2 effect02"><span>И1.21-22</span></a>
 							</div>
 						</div>
 						<div class="buttons3">
 							<div class="container3">
-								<a href="https://twitter.com/masuwa1018" class="btn3 effect03" target="_blank"><span>И2.21-22</span></a>
+								<a href="#" class="btn3 effect03"><span>И2.21-22</span></a>
 							</div>
 						</div>
 						<div class="buttons4">
 							<div class="container4">
-								<a href="https://twitter.com/masuwa1018" class="btn4 effect04" target="_blank"><span>И2.21-23</span></a>
+								<a href="#" class="btn4 effect04"><span>И2.21-23</span></a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- <div class="list__with_group2">
+				<div class="list__with_group2">
 					<h3 class="course3__title">3 курс</h3>
-					<li>П2.20-31</li>
-				</div> -->
+					<div class="course3__btns">
+						<div class="buttons">
+							<div class="container">
+								<a href="#" class="btn effect01"><span>X</span></a>
+							</div>
+						</div>
+						<div class="buttons2">
+							<div class="container2">
+								<a href="#" class="btn2 effect02"><span>X</span></a>
+							</div>
+						</div>
+						<div class="buttons3">
+							<div class="container3">
+								<a href="#" class="btn3 effect03"><span>П2.20-32</span></a>
+							</div>
+						</div>
+						<div class="buttons4">
+							<div class="container4">
+								<a href="#" class="btn4 effect04"><span>X</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list__with_group3">
+					<h3 class="course4__title">4 курс</h3>
+					<div class="course4__btns">
+						<div class="buttons">
+							<div class="container">
+								<a href="#" class="btn effect01"><span>И1.19-43</span></a>
+							</div>
+						</div>
+						<div class="buttons2">
+							<div class="container2">
+								<a href="#" class="btn2 effect02"><span>X</span></a>
+							</div>
+						</div>
+						<div class="buttons3">
+							<div class="container3">
+								<a href="#" class="btn3 effect03"><span>X</span></a>
+							</div>
+						</div>
+						<div class="buttons4">
+							<div class="container4">
+								<a href="#" class="btn4 effect04"><span>X</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 	</div>
+	<div style="display: none;" class="table__wrapper">
+		<div style="transform: translateY(-105%);" class="table__container">
+			<div class="table__header">
+				<div style="cursor: pointer;" class="cross__logo">
+					<img src="./img/cross_icon-icons.com_72347.svg" alt="">
+				</div>
+				<div class="table__save">
+					<button onclick="convertData()" class="convert">КОНВЕРТИРОВАТЬ</button>
+					<button onclick="saveData()" class="save">СОХРАНИТЬ</button>
+				</div>
+			</div>
+			<div class="table__info">
+				<div class="discipline">
+					<p>Дисциплина:</p>
+					<p>Web-программирование</p>
+				</div>
+				<div class="form__raport">
+					<p>Форма отчётности:</p>
+					<p>Экзамен</p>
+				</div>
+				<div class="teacher">
+					<p>Преподователь:</p>
+					<p>Жебаров Магомед Рамзанович</p>
+				</div>
+				<div class="student__group">
+					<p>Группа:</p>
+					<p>И1.21-22</p>
+				</div>
+			</div>
+			<table  class="iksweb">
+				<tbody id="table__body">
+					<tr>
+						<td rowspan="3" class="td1">№</td>
+						<td rowspan="3" class="td2">ФИО</td>
+						<td colspan="2" class="td3">Баллы за семестровые занятия</td>
+						<td rowspan="2" class="td4">Рубежная <br> аттестация</td>
+						<td rowspan="2" class="td5">Экзаменационная аттестация</td>
+						<td colspan="2" rowspan="2" class="td6">Посещение</td>
+						<td rowspan="3" class="td7">Итого</td>
+					</tr>
+					<tr>
+						<td class="td21">Лекции</td>
+						<td class="td22">Практика</td>
+					</tr>
+					<tr>
+						<td class="td31">24 занятий</td>
+						<td class="td32">56 занятий</td>
+						<td class="td33">(Баллы 0-10)</td>
+						<td class="td34">(Баллы 0-15)</td>
+						<td class="td35">Кол-во Н</td>
+						<td class="td35">(Баллы 0-15)</td>
+					</tr>
+					
+				</tbody>
+				<table style="display: none;" class="iksweb2">
+					<tbody id="table__body2">
+						<tr>
+							<td rowspan="3" class="td1">№</td>
+							<td rowspan="3" class="td2">ФИО</td>
+							<td colspan="2" class="td3">Баллы за семестровые занятия</td>
+							<td rowspan="2" class="td4">Рубежная <br> аттестация</td>
+							<td rowspan="2" class="td5">Экзаменационная аттестация</td>
+							<td colspan="2" rowspan="2" class="td6">Посещение</td>
+							<td rowspan="3" class="td7">Итого</td>
+						</tr>
+						<tr>
+							<td class="td21">Лекции</td>
+							<td class="td22">Практика</td>
+						</tr>
+						<tr>
+							<td class="td31">24 занятий</td>
+							<td class="td32">56 занятий</td>
+							<td class="td33">(Баллы 0-10)</td>
+							<td class="td34">(Баллы 0-15)</td>
+							<td class="td35">Кол-во Н</td>
+							<td class="td35">(Баллы 0-15)</td>
+						</tr>
+						
+					</tbody>
+				</table>
+			</table>
+		</div>
+	</div>
 	<script src="./js/code.js"></script>
+	<script src="./js/table.js"></script>
+	<script src="./js/attendanceScore.js"></script>
+	<script src="./js/dataStudents.js"></script>
+	<script src="./js/dataStudents2.js"></script>
 </body>
 </html>

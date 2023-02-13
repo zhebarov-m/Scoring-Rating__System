@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("FileName.eot");
+  src: url("FileName.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("FileName.eot");
+  src: url("FileName.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("FileName.eot");
+  src: url("FileName.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("FileName.eot");
+  src: url("FileName.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+* {
+  font-family: "Montserrat";
+}
+
 header {
   padding-top: 10px;
 }
@@ -13,12 +45,12 @@ header .header__logo .logo {
   margin-right: 10px;
 }
 header .header__logo .logo__text {
+  margin-top: 3px;
   font-size: 14px;
 }
 header .header__logo .logo__text span {
   line-height: 22px;
-  text-decoration: underline;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .wrapper {
@@ -30,6 +62,8 @@ header .header__logo .logo__text span {
   width: 260px;
   height: 100vh;
   background-color: #3366FF;
+  background: #0086ff;
+  background: linear-gradient(90deg, #3366FF 0%, #00a2ff 100%);
   color: white;
 }
 .sidebar .srs__system {
@@ -41,7 +75,7 @@ header .header__logo .logo__text span {
   cursor: pointer;
 }
 .sidebar .srs__system:hover {
-  background-color: #6699FF;
+  background-color: rgba(125, 166, 247, 0.4235294118);
 }
 .sidebar .srs__system p {
   margin-left: 10px;
@@ -57,7 +91,7 @@ header .header__logo .logo__text span {
 }
 .sidebar .timetable:hover {
   margin: 0px 10px;
-  background-color: #6699FF;
+  background-color: rgba(125, 166, 247, 0.4235294118);
 }
 .sidebar .timetable img {
   margin-left: 3px;
@@ -71,6 +105,9 @@ header .header__logo .logo__text span {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .content .nav__panel {
+  position: relative;
+  top: 50px;
+  left: 100px;
   display: flex;
   align-items: center;
 }
@@ -96,7 +133,6 @@ header .header__logo .logo__text span {
 .content .groups {
   margin-top: 100px;
   margin-left: 50px;
-  height: 60px;
   overflow: hidden;
   box-shadow: 1px 2px 10px black;
   border-radius: 10px;
@@ -121,6 +157,38 @@ header .header__logo .logo__text span {
   border-radius: 2px;
   padding: 0px 100px 8px 100px;
 }
+.content .groups .list__with_group2 {
+  text-align: center;
+  margin-top: 65px;
+}
+.content .groups .list__with_group2 .course3__btns {
+  display: flex;
+}
+.content .groups .list__with_group2 .course3__title {
+  margin-bottom: 25px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+  padding: 0px 100px 8px 100px;
+}
+.content .groups .list__with_group3 {
+  text-align: center;
+  margin-top: 65px;
+}
+.content .groups .list__with_group3 .course4__btns {
+  display: flex;
+}
+.content .groups .list__with_group3 .course4__title {
+  margin-bottom: 25px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+  padding: 0px 100px 8px 100px;
+}
 .content .groups .groups__text {
   position: absolute;
   top: 105px;
@@ -134,7 +202,7 @@ header .header__logo .logo__text span {
   width: 560px;
   height: 50px;
   font-size: 16px;
-  background: rgb(0, 134, 255);
+  background: #0086ff;
   background: linear-gradient(90deg, #0086ff 0%, #00d4ff 100%);
 }
 .content .groups .groups__text img {
@@ -492,4 +560,111 @@ body {
   opacity: 0;
   left: 120%;
   transform: rotate(40deg);
+}
+
+tbody tr .td1 {
+  font-weight: 600 !important;
+  text-align: center;
+  font-size: 13px;
+}
+
+tbody tr .td2 {
+  font-weight: 600 !important;
+  text-align: center;
+  font-size: 13px;
+}
+
+tbody tr .td3 {
+  font-weight: 600 !important;
+  text-align: center;
+  font-size: 13px;
+}
+
+tbody tr .td4 {
+  font-weight: 600 !important;
+  text-align: center;
+  font-size: 13px;
+}
+
+tbody tr .td5 {
+  font-weight: 600 !important;
+  text-align: center;
+  font-size: 13px;
+}
+
+tbody tr .td6 {
+  font-weight: 600 !important;
+  text-align: center;
+  font-size: 13px;
+}
+
+tbody tr .td7 {
+  font-weight: 600 !important;
+  text-align: center;
+  font-size: 13px;
+}
+
+tbody tr .td21 {
+  font-weight: 600 !important;
+  text-align: center;
+}
+
+tbody tr .td22 {
+  font-weight: 600 !important;
+  text-align: center;
+}
+
+tbody tr .td31 {
+  font-weight: 600 !important;
+  text-align: center;
+}
+
+tbody tr .td32 {
+  font-weight: 600 !important;
+  text-align: center;
+}
+
+tbody tr .td33 {
+  font-weight: 600 !important;
+  text-align: center;
+}
+
+tbody tr .td34 {
+  font-weight: 600 !important;
+  text-align: center;
+  font-size: 13px;
+}
+
+tbody tr .td35 {
+  font-weight: 600 !important;
+  text-align: center;
+  font-size: 13px;
+}
+
+.table__info {
+  font-size: 13px !important;
+}
+
+tbody tr td {
+  font-weight: 500 !important;
+  text-align: center;
+  font-size: 11px !important;
+  line-height: 15px !important;
+}
+tbody tr td input {
+  font-size: 13px;
+}
+
+.srs__title {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px !important;
+}
+
+.table__save button {
+  font-size: 12px !important;
+}
+
+.groups__text {
+  font-weight: 500;
 }

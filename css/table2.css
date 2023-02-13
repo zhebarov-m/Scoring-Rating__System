@@ -1,0 +1,32 @@
+table {
+  border-collapse: collapse;
+  width: 100px;
+}
+table #ceil {
+  background-color: red;
+}
+
+th, td {
+  border: 1px solid gray;
+  padding: 1px;
+  text-align: left;
+}
+
+th {
+  background-color: lightgray;
+}
+
+#ceil {
+  background-color: red;
+}
+
+input {
+  height: 10px;
+  width: 140px;
+  border: none;
+  outline: none;
+}
+input:focus {
+  border: none;
+  outline: none;
+}

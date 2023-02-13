@@ -1,0 +1,292 @@
+@font-face {
+	font-family: 'Constania';
+	src: url('FileName.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/ofont.ru_Constantia.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+.table__info {
+
+	margin-top: 8px;
+	margin-left: 6px;
+	margin-bottom: 15px;
+	line-height: 20px;
+	font-size: 14px;
+	.discipline {
+		display: flex;
+
+		p:first-child {
+			font-weight: 700 !important;
+			margin-right: 15px;
+		}
+		p:last-child {
+			font-weight: 500 !important;
+		}
+	}
+	
+	.form__raport {
+		display: flex;
+
+		p:first-child {
+			font-weight: 700 !important;
+			margin-right: 15px;
+		}
+		p:last-child {
+			font-weight: 500 !important;
+		}
+	}
+
+	.teacher {
+		display: flex;
+
+		p:first-child {
+			font-weight: 700 !important;
+			margin-right: 15px;
+		}
+		p:last-child {
+			font-weight: 500 !important;
+		}
+	}
+
+	.student__group {
+		display: flex;
+
+		p:first-child {
+			font-weight: 700 !important;
+			margin-right: 15px;
+		}
+		p:last-child {
+			font-weight: 500 !important;
+		}
+	}
+}
+
+
+
+		/* Стили таблицы (IKSWEB) */
+table.iksweb2 {
+	border-radius: 0px 0px 8px 8px;
+	text-decoration: none;
+	border-collapse:collapse;
+	width: 900px;
+	text-align:center;
+}
+
+table.iksweb2 th {
+	font-weight:normal;
+	font-size:14px; 
+	color:#000000;
+	background-color:#ffffff;
+}
+
+table.iksweb2 td {
+	font-size:13px;
+	color:#000000;
+}
+
+table.iksweb2 td,
+table.iksweb2 th {
+	white-space:pre-wrap;
+	padding:2px 0px;
+	line-height:13px;
+	vertical-align: middle;
+	border: 1px solid #c9c9c9;
+}
+
+table.iksweb2 tr:hover {
+	background-color:#f3f3f3
+}
+
+table.iksweb2 tr:hover td {
+	color:#000000;
+	cursor:default;
+}
+
+.table__header {
+	width: 900px;
+	padding: 0px 20px;
+	border-radius: 6px 6px 0px 0px;
+	height: 50px;
+	background-color: #3366FF;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cross__logo {
+	margin-top: 4px;
+}
+
+.table__save {
+	color: white;
+}
+
+.table__save .save{
+	cursor: pointer;
+}
+
+.at1 {
+	text-align: center;
+	width: 100%;
+}
+.at1 tr td {
+	width: 50%;
+}
+/* .at1 {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+} */
+#table__body2 tr .fio{
+	height: 80px;
+}
+
+#table__body2 tr .td1 {
+	font-weight: 700;
+	width: 10px;
+	line-height: 5px;
+}
+
+#table__body2 tr .td2 {
+	font-weight: 700;
+	width: 200px;
+	height: 100px;
+}
+
+#table__body2 tr .td3 {
+	font-weight: 700;
+	width: 180px;
+	line-height: 0px;
+}
+
+#table__body2 tr .td4 {
+	font-weight: 700;
+	width: 100px;
+}
+
+#table__body2 tr .td5 {
+	font-weight: 700;
+	width: 80px;
+}
+
+#table__body2 tr .td6 {
+	font-weight: 700;
+	width: 80px;
+}
+#table__body2 tr .td7 {
+	font-weight: 700;
+	width: 10px;
+}
+
+#table__body2 tr .td21 {
+	font-weight: 700;
+	width: 35px;
+	height: 40px;
+}
+#table__body2 tr .td22 {
+	font-weight: 700;
+	width: 50px;
+	height: 40px;
+}
+#table__body2 tr .td31 {
+	font-weight: 700;
+	width: 50px;
+	height: 40px;
+}
+#table__body2 tr .td32 {
+	font-weight: 700;
+	width: 50px;
+	height: 40px;
+}
+#table__body2 tr .td33 {
+	font-weight: 700;
+	width: 50px;
+	height: 40px;
+}
+#table__body2 tr .td34 {
+	font-weight: 700;
+	width: 50px;
+	height: 40px;
+}
+#table__body2 tr .td35 {
+	font-weight: 700;
+	width: 50px;
+	height: 40px;
+}
+
+input {
+	width: 30px;
+	border: none;
+	outline: none;
+	text-align: center;
+}
+input.input {
+	width: 100%;
+	height: 100%;
+}
+
+.save {
+	// box-shadow:inset 0px 1px 0px 0px #9fb4f2;
+	background:linear-gradient(to bottom, #3366ff 5%, #3366ff 100%);
+	background-color:#3366ff;
+	border:1px solid #3366ff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+.save:hover {
+	background:linear-gradient(to bottom, #3366ff 5%, #3366ff 100%);
+	background-color:#3366ff;
+}
+.save:active {
+	position:relative;
+	top:1px;
+}
+table {
+	margin-left: 5px;
+}
+
+.table__info {
+	margin-left: 10px;
+}
+.table__container {
+	// display: none !important;
+	position: relative;
+	top: 30px;
+	left: 300px;
+	z-index: 100;
+	transition: all 5s;
+	margin-top: 30px;
+	margin-left: 50px;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	font-family: 'Constania' !important;
+	font-weight:  400 !important;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.table__wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background-color: #3535358f !important;
+	width: 100vw !important;
+	height: 100vh !important;
+}
+
+.table__header {
+	width: 910px;
+}
