@@ -51,7 +51,7 @@ function convertData() {
 		let examScore = parseInt(cells[3].value) || 0;
 		let attendanceScore = parseInt(cells[5].value) || 0;
 		let totalScore = lecturesScore + practiceScore + midtermScore + examScore + attendanceScore;
-		cells[6].value = totalScore;
+		cells[6].value = (totalScore / 3 / 80 * 100).toFixed(0);
 		if (totalScore >= 70) {
 			cells[6].style.color = "#339933";
 		} else {
@@ -59,5 +59,5 @@ function convertData() {
 		}
 	}
 }
-window.addEventListener('load', convertData);
+// window.addEventListener('load', convertData);
 
