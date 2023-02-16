@@ -266,108 +266,90 @@ var data = [
 	},
 ];
 
+
+
  
-function populateTable() {
-	document.addEventListener("input", function (event) {
-		var target = event.target;
-		if (target.getAttribute("name") === "field6") {
-		var attendance = Number(target.value);
-		var totalAbsences = 80 - attendance;
-		var field7 = target.parentElement.nextElementSibling.firstElementChild;
-		var score = 0;
-		if (totalAbsences >= 0 && totalAbsences <= 2) {
-		score = 12;
-		} else if (totalAbsences >= 3 && totalAbsences <= 6) {
-		score = 10;
-		} else if (totalAbsences >= 7 && totalAbsences <= 10) {
-		score = 5;
-		} else if (totalAbsences >= 11 && totalAbsences <= 12) {
-		score = 2;
-		} else if (totalAbsences > 12) {
-		score = 0;
-		}
-		field7.value = Math.min(15, score).toFixed(2);
-		}
-		});
-  var table = document.querySelector('.iksweb #table__body');
-  for (var i = 0; i < data.length; i++) {
-    var row = document.createElement('tr');
-    var numberCell = document.createElement('td');
-    numberCell.textContent = i + 1;
-    row.appendChild(numberCell);
+//function populateTable() {
 
-    var nameCell = document.createElement('td');
-    nameCell.textContent = data[i].name;
-    row.appendChild(nameCell);
+//   var table = document.querySelector('.iksweb #table__body');
+//   for (var i = 0; i < data.length; i++) {
+//     var row = document.createElement('tr');
+//     var numberCell = document.createElement('td');
+//     numberCell.textContent = i + 1;
+//     row.appendChild(numberCell);
 
-    var lecturesCell = document.createElement('td');
-    var lecturesInput = document.createElement('input');
-    lecturesInput.classList.add('input');
-    lecturesInput.setAttribute('name', 'field' + (i * 7 + 2));
-    lecturesInput.setAttribute('value', data[i].lectures);
-    lecturesInput.setAttribute('type', 'text');
-    lecturesCell.appendChild(lecturesInput);
-    row.appendChild(lecturesCell);
+//     var nameCell = document.createElement('td');
+//     nameCell.textContent = data[i].name;
+//     row.appendChild(nameCell);
 
-    var practiceCell = document.createElement('td');
-    var practiceInput = document.createElement('input');
-    practiceInput.classList.add('input');
-    practiceInput.setAttribute('name', 'field' + (i * 7 + 3));
-    practiceInput.setAttribute('value', data[i].practice);
-    practiceInput.setAttribute('type', 'text');
-    practiceCell.appendChild(practiceInput);
-    row.appendChild(practiceCell);
+//     var lecturesCell = document.createElement('td');
+//     var lecturesInput = document.createElement('input');
+//     lecturesInput.classList.add('input');
+//     lecturesInput.setAttribute('name', 'field' + (i * 7 + 2));
+//     lecturesInput.setAttribute('value', data[i].lectures);
+//     lecturesInput.setAttribute('type', 'text');
+//     lecturesCell.appendChild(lecturesInput);
+//     row.appendChild(lecturesCell);
 
-    var midtermCell = document.createElement('td');
-    var midtermInput = document.createElement('input');
-    midtermInput.classList.add('input');
-    midtermInput.setAttribute('name', 'field' + (i * 7 + 4));
-    midtermInput.setAttribute('value', data[i].midterm);
-    midtermInput.setAttribute('type', 'text');
-    midtermCell.appendChild(midtermInput);
-    row.appendChild(midtermCell);
+//     var practiceCell = document.createElement('td');
+//     var practiceInput = document.createElement('input');
+//     practiceInput.classList.add('input');
+//     practiceInput.setAttribute('name', 'field' + (i * 7 + 3));
+//     practiceInput.setAttribute('value', data[i].practice);
+//     practiceInput.setAttribute('type', 'text');
+//     practiceCell.appendChild(practiceInput);
+//     row.appendChild(practiceCell);
 
-    var examCell = document.createElement('td');
-	 var examInput = document.createElement('input');
-		examInput.classList.add('input');
-		examInput.setAttribute('name', 'field' + (i * 7 + 5));
-		examInput.setAttribute('value', data[i].exam);
-		examInput.setAttribute('type', 'text');
-		examCell.appendChild(examInput);
-	  row.appendChild(examCell);
-	  var attendance1Cell = document.createElement('td');
-var attendance1Input = document.createElement('input');
-attendance1Input.classList.add('input');
-attendance1Input.setAttribute('name', 'field' + (i * 7 + 6));
-attendance1Input.setAttribute('value', data[i].attendance1);
-attendance1Input.setAttribute('type', 'text');
-attendance1Cell.appendChild(attendance1Input);
-row.appendChild(attendance1Cell);
+//     var midtermCell = document.createElement('td');
+//     var midtermInput = document.createElement('input');
+//     midtermInput.classList.add('input');
+//     midtermInput.setAttribute('name', 'field' + (i * 7 + 4));
+//     midtermInput.setAttribute('value', data[i].midterm);
+//     midtermInput.setAttribute('type', 'text');
+//     midtermCell.appendChild(midtermInput);
+//     row.appendChild(midtermCell);
 
-var attendance2Cell = document.createElement('td');
-var attendance2Input = document.createElement('input');
-attendance2Input.classList.add('input');
-attendance2Input.setAttribute('name', 'field' + (i * 7 + 7));
-attendance2Input.setAttribute('value', data[i].attendance2);
-attendance2Input.setAttribute('type', 'text');
-attendance2Cell.appendChild(attendance2Input);
-row.appendChild(attendance2Cell);
+//     var examCell = document.createElement('td');
+// 	 var examInput = document.createElement('input');
+// 		examInput.classList.add('input');
+// 		examInput.setAttribute('name', 'field' + (i * 7 + 5));
+// 		examInput.setAttribute('value', data[i].exam);
+// 		examInput.setAttribute('type', 'text');
+// 		examCell.appendChild(examInput);
+// 	  row.appendChild(examCell);
+// 	  var attendance1Cell = document.createElement('td');
+// var attendance1Input = document.createElement('input');
+// attendance1Input.classList.add('input');
+// attendance1Input.setAttribute('name', 'field' + (i * 7 + 6));
+// attendance1Input.setAttribute('value', data[i].attendance1);
+// attendance1Input.setAttribute('type', 'text');
+// attendance1Cell.appendChild(attendance1Input);
+// row.appendChild(attendance1Cell);
 
-var totalCell = document.createElement('td');
-	  var totalInput = document.createElement('input');
-	  totalInput.classList.add('input');
-	  totalInput.setAttribute('name', 'field' + (i * 7 + 8));
-	  totalInput.setAttribute('type', 'text');
-	  totalCell.appendChild(totalInput);
-totalInput.value = data[i].total;
-	  row.appendChild(totalCell);
+// var attendance2Cell = document.createElement('td');
+// var attendance2Input = document.createElement('input');
+// attendance2Input.classList.add('input');
+// attendance2Input.setAttribute('name', 'field' + (i * 7 + 7));
+// attendance2Input.setAttribute('value', data[i].attendance2);
+// attendance2Input.setAttribute('type', 'text');
+// attendance2Cell.appendChild(attendance2Input);
+// row.appendChild(attendance2Cell);
+
+// var totalCell = document.createElement('td');
+// 	  var totalInput = document.createElement('input');
+// 	  totalInput.classList.add('input');
+// 	  totalInput.setAttribute('name', 'field' + (i * 7 + 8));
+// 	  totalInput.setAttribute('type', 'text');
+// 	  totalCell.appendChild(totalInput);
+// totalInput.value = data[i].total;
+// 	  row.appendChild(totalCell);
 	
 
-table.appendChild(row);
-}
-}
+// table.appendChild(row);
+// }
+// }
 
-document.addEventListener('DOMContentLoaded', function() {
-populateTable();
-});
+// document.addEventListener('DOMContentLoaded', function() {
+// populateTable();
+// }); -->
 
